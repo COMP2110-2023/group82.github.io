@@ -110,75 +110,75 @@ _fetch () {
     if(is_day === 0){
       this.WhatDay = "It is currently night time";
       this.style = 'color: white;'
-      this.style.backgroundImage = 'url("../src/Weather_Images/night.jpg")';
+      this.style.backgroundImage = 'url("../group82.github.io/src/Weather_Images/night.jpg")';
     }
     if(is_day === 1) {
       this.WhatDay = "It is currently day time";
       this.style = 'color: black;'
-      this.style.backgroundImage = 'url("../src/Weather_Images/day.jpg")';
+      this.style.backgroundImage = 'url("../group82.github.io/src/Weather_Images/day.jpg")';
     }
 
 //this also checks the weather code in the api and also styles accordingly (Weather Codes explained further in Readme.md)
     if ((weathercode === 0 && is_day === 1)){
       this.forecast = "Clear Sky";
-      this.image = "../src/Weather_Images/Dayclear.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Dayclear.jpg";
     }
 else if((weathercode === 0 && is_day === 0)){
       this.forecast = "Clear Sky";
-      this.image = "../src/Weather_Images/Nightclear.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Nightclear.jpg";
     }
     else if((weathercode === 1 && is_day === 1) || (weathercode === 2 && is_day === 1) || (weathercode === 3 && is_day === 1)){
       this.forecast = "Mainly Clear, Partly Cloudy and Overcast";
-      this.image = "../src/Weather_Images/Daycloudy.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Daycloudy.jpg";
     }
     else if((weathercode === 1 && is_day === 0) || (weathercode === 2 && is_day === 0) || (weathercode === 3 && is_day === 0)){
       this.forecast = "Mainly Clear, Partly Cloudy and Overcast";
-      this.image = "../src/Weather_Images/Nightcloudy.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Nightcloudy.jpg";
       console.log("night time");
     }
     else if((weathercode === 45) || (weathercode === 48)){
       this.forecast = "Foggy";
-      this.image = "../src/Weather_Images/Foggy.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Foggy.jpg";
     }
     else if((weathercode === 51) || (weathercode === 53) || (weathercode === 55)){
       this.forecast = "Slight to Moderate Drizzle";
-      this.image = "../src/Weather_Images/rainShowers.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/rainShowers.jpg";
     }
     else if((weathercode === 56) || (weathercode === 57)){
       this.forecast = "Freezing Drizzle";
-      this.image = "../src/Weather_Images/rainShowers.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/rainShowers.jpg";
     }
     else if((weathercode === 61) || (weathercode === 63) || (weathercode === 65)){
       this.forecast = "Raining";
-      this.image = "../src/Weather_Images/Rain.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Rain.jpg";
     }
     else if((weathercode === 66) || (weathercode === 67)){
       this.forecast = "Freezing Rain";
-      this.image = "../src/Weather_Images/Rain.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Rain.jpg";
     }
     else if((weathercode === 71) ||(weathercode === 73) || (weathercode ===75)){
       this.forecast = "Snowing";
-      this.image = "../src/Weather_Images/Snow.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Snow.jpg";
     }
     else if(weathercode === 77){
       this.forcast = "Snow Grains";
-      this.image = "../src/Weather_Images/Snow.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Snow.jpg";
     }
     else if((weathercode === 80) || (weathercode ===81) || (weathercode === 82)){
       this.forecast = "Rain Showers";
-      this.image = "../src/Weather_Images/rainShowers.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/rainShowers.jpg";
     }
     else if((weathercode === 85) || (weathercode === 86)){
       this.forecast = "Snow Showers";
-      this.image = "../src/Weather_Images/snowShowers.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/snowShowers.jpg";
     }
     else if(weathercode === 95){
       this.forecast = "Thunderstorms";
-      this.image = "../src/Weather_Images/Thunder.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/Thunder.jpg";
     }
     else if((weathercode === 96) ||(weathercode === 99)){
       this.forecast = "Thunderstorms and Hail";
-      this.image = "../src/Weather_Images/ThunderRain.jpg";
+      this.image = "../group82.github.io/src/Weather_Images/ThunderRain.jpg";
     }
   })
 
